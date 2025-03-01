@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes de Temporada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="bg-purple-dark text-white text-center py-4 shadow">
+        <h1>Animes de Temporada</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-purple-light shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="temporada.html">De Temporada</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="genero.html">Por Géneros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="mangas.html">Mangas</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="recomendados.html">Recomendados</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-purple">De la temporada actual</h2>
+            </div>
+            <div class="col-md-6">
+                <div id="animeCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <img src="imagenes/dandan.jpg" class="img-fluid" alt="Dandadan">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/Frieren.jpg" class="img-fluid" alt="Frieren">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/kekkai_sensen.jpg" class="img-fluid" alt="Kekkai Sensen">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#animeCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#animeCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container flex-grow-1 my-5 p-4 bg-light rounded shadow">
+        <section id="invierno">
+            <h2 class="text-purple">Invierno</h2>
+            <table class="table table-bordered">
+                <thead class="table-purple">
+                    <tr>
+                        <th>Anime</th>
+                        <th>Episodios</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Attack on Titan: The Final Season</td>
+                        <td>12 (Finalizado)</td>
+                        <td>Acción, Drama, Fantasía</td>
+                    </tr>
+                    <tr>
+                        <td>My Dress-Up Darling</td>
+                        <td>12 (Finalizado)</td>
+                        <td>Romance, Comedia, Slice of Life</td>
+                    </tr>
+                    <tr>
+                        <td>Demon Slayer: Entertainment District Arc</td>
+                        <td>11 (Finalizado)</td>
+                        <td>Acción, Fantasía, Sobrenatural</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="primavera">
+            <h2 class="text-purple">Primavera</h2>
+            <table class="table table-bordered">
+                <thead class="table-purple">
+                    <tr>
+                        <th>Anime</th>
+                        <th>Episodios</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spy x Family</td>
+                        <td>12 (En emisión)</td>
+                        <td>Acción, Comedia, Slice of Life</td>
+                    </tr>
+                    <tr>
+                        <td>Kaguya-sama: Love is War - Ultra Romantic</td>
+                        <td>13 (Finalizado)</td>
+                        <td>Comedia, Romance, Escolar</td>
+                    </tr>
+                    <tr>
+                        <td>The Rising of the Shield Hero Season 2</td>
+                        <td>13 (Finalizado)</td>
+                        <td>Acción, Aventura, Fantasía</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="verano">
+            <h2 class="text-purple">Verano</h2>
+            <table class="table table-bordered">
+                <thead class="table-purple">
+                    <tr>
+                        <th>Anime</th>
+                        <th>Episodios</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Made in Abyss: The Golden City of the Scorching Sun</td>
+                        <td>12 (Finalizado)</td>
+                        <td>Aventura, Drama, Fantasía</td>
+                    </tr>
+                    <tr>
+                        <td>Overlord IV</td>
+                        <td>13 (Finalizado)</td>
+                        <td>Acción, Aventura, Fantasía</td>
+                    </tr>
+                    <tr>
+                        <td>Call of the Night</td>
+                        <td>13 (Finalizado)</td>
+                        <td>Drama, Sobrenatural, Romance</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="bg-purple-light text-white text-center py-3 mt-auto shadow">
+        <p class="mb-0">&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
