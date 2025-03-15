@@ -1,0 +1,21 @@
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInCards 0.8s ease-out forwards !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important;
+
+    &:hover {
+        transform: scale(1.05) !important; /* Asegurar que se aplique */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+    }
+}
+@keyframes fadeInCards {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

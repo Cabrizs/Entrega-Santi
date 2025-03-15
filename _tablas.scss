@@ -1,0 +1,26 @@
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+table th {
+    background-color: #d4b5ff;
+    font-weight: 600;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0e0ff;
+}
+
+table tr:hover {
+    background-color: #e0c4ff;
+}

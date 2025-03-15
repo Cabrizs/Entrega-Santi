@@ -1,0 +1,63 @@
+nav {
+    background-color: #6a0dad;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #b266ff;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background: #b266ff;
+    color: #fff;
+    transform: scale(1.1);
+}
